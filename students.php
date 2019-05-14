@@ -18,11 +18,10 @@
 
       // prepare page content
       $data['content'] .= "<table border='1'>";
-      $data['content'] .= "<tr><th>ModuleCode</th><th>Name</th><th>Level</th></tr>";
+      $data['content'] .= "<tr><th>ID</th><th>Date of Birth</th><th>First Name</th><th>Last Name</th><th>House</th><th>town</th><th>County</th><th>Country</th><th>Postcode</th></tr>";
       // Display the modules within the html table
       while($row = mysqli_fetch_array($result)) {
-         $data['content'] .= "<tr><td> $row[modulecode] </td><td> $row[name] </td>";
-         $data['content'] .= "<td> $row[level] </td></tr>";
+         $data['content'] .= "<tr><td> $row[studentid] </td><td> $row[dob] </td><td> $row[firstname] </td><td> $row[lastname] </td><td> $row[house] </td><td> $row[town] </td><td> $row[county] </td><td> $row[country] </td><td> $row[postcode] </td></tr>";
       }
       $data['content'] .= "</table>";
 
