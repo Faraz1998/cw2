@@ -1,6 +1,5 @@
 <form method="post" action="delete.php">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
 <?php include("_includes/config.inc");
       include("_includes/dbconnect.inc");
@@ -29,6 +28,5 @@
       header("Location: index.php"); }
    echo template("templates/partials/footer.php");
 ?>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <input type="submit" name="delete" id="delete" value="Delete Records">
 </form>
