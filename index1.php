@@ -1,11 +1,9 @@
 <?php
-
 include("_includes/config.inc");
 include("_includes/dbconnect.inc");
 include("_includes/functions.inc");
 include("templates/partials/header.php");
 include("templates/partials/nav.php");
-
 ?>
 
 <html>
